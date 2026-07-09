@@ -1,8 +1,9 @@
 function sortNumbers(arr) {
     let sortedNumbers = arr.sort((a, b) => a - b);
     let resultArray = [];
+    let arrLength = arr.length;
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arrLength; i++) {
         if (i % 2 === 0) {
             resultArray.push(sortedNumbers.shift());
         } else {
@@ -12,5 +13,3 @@ function sortNumbers(arr) {
 
     return resultArray;
 }
-
-console.log(sortNumbers([1, 65, 3, 52, 48, 63, 31, -3, 18, 56]));
