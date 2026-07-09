@@ -4,5 +4,3 @@ function multiplicationTable(num){
         console.log(`${num} X ${i} = ${currentResult}`)
     }
 }
-
-multiplicationTable(5)
