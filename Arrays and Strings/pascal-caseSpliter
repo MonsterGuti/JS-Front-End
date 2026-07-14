@@ -1,0 +1,18 @@
+function pascalSplitter(text) {
+    let words = [];
+    let currentWord = "";
+
+    for (let i = 0; i < text.length; i++) {
+
+        if (text[i] >= 'A' && text[i] <= 'Z' && i !== 0) {
+            words.push(currentWord);
+            currentWord = "";
+        }
+
+        currentWord += text[i];
+    }
+
+    words.push(currentWord);
+
+    console.log(words.join(", "));
+}
